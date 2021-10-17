@@ -3,7 +3,7 @@ My first Github repo. A simple diary built using Python with Django.
 
 ✔️ TO-DO: Improve the functionality and make it more.. stylish.
 
-## How to run:
+## 💨 How to run:
 Run by creating and activating a virtual environment and installing Django:
 
 ```
