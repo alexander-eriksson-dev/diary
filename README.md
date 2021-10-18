@@ -16,7 +16,7 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-Create file '.env' in same directory as settings.py containing (code generated from eg djecrety.ir):
+Create file '.env' in same directory as settings.py containing (code generated from eg www.djecrety.ir):
 ```
 SECRET_KEY='PASTE_HERE'
 ```
