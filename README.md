@@ -1,5 +1,7 @@
 # diary
-A simple diary built using Python with Django. My first Github repo. This is for me to practice managing a project, using git and keeping the project fairly portable for you to try this on your own machine. Updating as I learn. 
+A simple diary built using Python with Django. 
+
+My first Github repo, this is for me to practice managing a project, using git and keeping the project fairly portable for you to try this on your own machine. Updating as I learn. 
 
 ✔️ TO-DO: Improve the functionality and make it more.. stylish.
 
