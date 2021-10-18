@@ -16,19 +16,19 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-Create file '.env' in same directory as settings.py containing (code generated from eg www.djecrety.ir):
+Create file '.env' in same directory as settings.py containing secret key generated from eg www.djecrety.ir
 ```
 SECRET_KEY='PASTE_HERE'
 ```
-Migrate database and add an admin user:
+Migrate database and add an admin user
 
 ```
-- python manage.py migrate
-- python manage.py createsuperuser
+python manage.py migrate
+python manage.py createsuperuser
 ```
 Run local server:
 ```
-- python manage.py runserver
+python manage.py runserver
 ```
 👏🏼👏🏼
 
