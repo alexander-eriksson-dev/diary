@@ -1,5 +1,5 @@
 # diary
-My first Github repo. A simple diary built using Python with Django.
+A simple diary built using Python with Django. My first Github repo. This is for me to practice managing a project, using git and keeping the project fairly portable for you to try this on your own machine. Updating as I learn. 
 
 ✔️ TO-DO: Improve the functionality and make it more.. stylish.
 
@@ -18,7 +18,7 @@ Create file '.env' in same directory as settings.py containing (code generated f
 ```
 SECRET_KEY='PASTE_HERE'
 ```
-Create a database and add a superuser:
+Migrate database and add an admin user:
 
 ```
 - python manage.py migrate
