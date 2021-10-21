@@ -23,11 +23,27 @@ urlpatterns = [
     path(
         "entry/<int:pk>/update",
         views.EntryUpdateView.as_view(),
-        name="entry-update",
+        name="entry-update"
     ),
     path(
         "entry/<int:pk>/delete",
         views.EntryDeleteView.as_view(),
-        name="entry-delete",
+        name="entry-delete"
     ),
+    path(
+        "register", 
+        views.register_request, 
+        name="register"
+    ),
+    path(
+        "login", 
+        views.login_request, 
+        name="login"
+    ),
+    path(
+        "logout", 
+        views.logout_view, 
+        name="logout"
+    ),
+    
 ]
