@@ -1,19 +1,28 @@
 <!-- entries/templates/entries/entry_form.html -->
 
 {% extends "entries/base.html" %}
+
 {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Save">
+
+{% load crispy_forms_tags %}
+
+<div class="container py-5">
+  <h1>Create a new entry</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button class="btn btn-primary" type="submit" value="Save">Submit</button>
     </form>
     {% if entry %}
         <a href="{% url 'entry-detail' entry.id %}">
-            <button>Cancel</button>
+            <button class="btn btn-secondary">Cancel</button>
         </a>
     {% else %}
         <a href="{% url 'entry-list' %}">
-            <button>Cancel</button>
+            <button class="btn btn-secondary">Cancel</button>
         </a>
     {% endif %}
+  </form>
+</div>
+
 {% endblock %}
