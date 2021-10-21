@@ -1,6 +1,8 @@
 # diary
 A simple diary built using Python with Django. 
 
+![Demo screenshot](https://i.imgur.com/M0ISMtq.png)
+
 My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn. 😁
 
 ## DEMO:
