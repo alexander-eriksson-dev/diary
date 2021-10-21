@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import environ
+import django_heroku
 
 # Initialise environment variables
 env = environ.Env()
@@ -136,3 +137,5 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
