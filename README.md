@@ -23,6 +23,7 @@ Password: github123
 * Give each user their own database of entries (right now its shared).
 * Improved entry form with formatting, image upload etc. 
 * Dark-mode switch and improved styling. 
+* Profile page with password change etc. 
 
 ## 💨 How to run yourself:
 Clone repo
