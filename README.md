@@ -6,7 +6,7 @@ My first Github repo, this is for me to practice managing a project, using git, 
 ## DEMO:
 This Github repo is automatically deployed on Heroku when pushed to. You can try it out here: 
 
-[DIARY APP DEMO](www.warm-scrubland-19058.herokuapp.com/)
+[DIARY APP DEMO](https://warm-scrubland-19058.herokuapp.com/)
 
 If you dont bother registering: 
 Username: demo
