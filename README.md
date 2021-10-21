@@ -1,5 +1,10 @@
 # diary
-A simple diary built using Python with Django. 
+A simple diary built with Python. 
+
+* Django web framework
+* Bootstrap for responsive scaling/design
+* Runs on Gunicorn
+* PostgreSQL database
 
 ![Demo screenshot](https://i.imgur.com/M0ISMtq.png)
 
