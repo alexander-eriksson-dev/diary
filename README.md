@@ -1,11 +1,23 @@
 # diary
 A simple diary built using Python with Django. 
 
-My first Github repo, this is for me to practice managing a project, using git and keeping the project fairly portable for you to try this on your own machine. Updating as I learn. 
+My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn. 😁
 
-✔️ TO-DO: Improve the functionality and make it more.. stylish.
+## DEMO:
+This Github repo is automatically deployed on Heroku when pushed to. You can try it out here: 
 
-## 💨 How to run:
+[DIARY APP DEMO](www.warm-scrubland-19058.herokuapp.com/)
+
+If you dont bother registering: 
+Username: demo
+Password: github123
+
+✔️ WORKING ON: 
+* Give each user their own database of entries (right now its shared).
+* Improved entry form with formatting, image upload etc. 
+* Dark-mode switch and improved styling. 
+
+## 💨 How to run yourself:
 Clone repo
 ```
 git clone https://github.com/alexander-eriksson-dev/diary
@@ -16,15 +28,14 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-Create file '.env' in same directory as settings.py containing secret key generated from eg www.djecrety.ir
-```
-SECRET_KEY='PASTE_HERE'
-```
 Migrate database and add an admin user
-
 ```
 python manage.py migrate
 python manage.py createsuperuser
+```
+Collect static files
+```
+python manage.py collectstatic
 ```
 Run local server:
 ```
@@ -33,4 +44,4 @@ python manage.py runserver
 👏🏼👏🏼
 
 ## Credit:
-Based on the project from https://realpython.com/django-diary-project-python/
+Started out from [this project from RealPython](https://realpython.com/django-diary-project-python/)
