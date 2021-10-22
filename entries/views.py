@@ -22,16 +22,26 @@ class LockedView(LoginRequiredMixin):
 
 class EntryListView(LockedView, ListView):
     model = Entry
-    queryset = Entry.objects.all().order_by("-date_created")
+
+    def get_queryset(self):
+        return super().get_queryset().filter(user=self.request.user).order_by("-date_created")
 
 class EntryDetailView(LockedView, DetailView):
     model = Entry
+
+    def get_queryset(self):
+        return super().get_queryset().filter(user=self.request.user)
 
 class EntryCreateView(LockedView, SuccessMessageMixin, CreateView):
     model = Entry
     fields = ["title", "content"]
     success_url = reverse_lazy("entry-list")
     success_message = "Your new entry was created!"
+
+    def form_valid(self, form):
+         user = self.request.user
+         form.instance.user = user
+         return super(EntryCreateView, self).form_valid(form)
 
 class EntryUpdateView(LockedView, SuccessMessageMixin, UpdateView):
     model = Entry
@@ -43,6 +53,9 @@ class EntryUpdateView(LockedView, SuccessMessageMixin, UpdateView):
             "entry-detail",
             kwargs={"pk": self.object.pk}
         )
+
+    def get_queryset(self):
+        return super().get_queryset().filter(user=self.request.user)
 
 class EntryDeleteView(LockedView, DeleteView):
     model = Entry
@@ -87,7 +100,4 @@ def logout_view(request):
     logout(request)
     messages.info(request, f"You are now logged out.")
     return redirect('login')
-
-
-# Create your views here.
 
