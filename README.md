@@ -6,7 +6,7 @@ A simple diary built with Python.
 * Runs on Gunicorn
 * PostgreSQL database
 
-![Demo screenshot](https://i.imgur.com/M0ISMtq.png)
+![Demo screenshot](https://i.imgur.com/gLJvu1H.png)
 
 My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn. 😁
 
