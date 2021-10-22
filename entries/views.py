@@ -1,4 +1,3 @@
-from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import (
@@ -8,13 +7,14 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
+from django.views.generic.edit import DeleteView
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from django.views.generic.edit import DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin
-from .forms import NewUserForm
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.forms import AuthenticationForm
 
+from .forms import NewUserForm
 from .models import Entry
 
 class LockedView(LoginRequiredMixin):
@@ -23,12 +23,14 @@ class LockedView(LoginRequiredMixin):
 class EntryListView(LockedView, ListView):
     model = Entry
 
+    # DO NOT REMOVE QUERYSET, limits users from accessing others entries
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user).order_by("-date_created")
 
 class EntryDetailView(LockedView, DetailView):
     model = Entry
 
+    # DO NOT REMOVE QUERYSET, limits users from accessing others entries
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user)
 
@@ -54,6 +56,7 @@ class EntryUpdateView(LockedView, SuccessMessageMixin, UpdateView):
             kwargs={"pk": self.object.pk}
         )
 
+    # DO NOT REMOVE QUERYSET, limits users from accessing others entries
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user)
 

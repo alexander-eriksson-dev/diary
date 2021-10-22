@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # LOADS SECRET KEY FROM ENVIRONEMT VARIABLE IF ON SERVER!
 SECRET_KEY = os.getenv('SECRET_KEY', '2as@_shbjydxtqidqq45axa#bt8@7ynqt4w@mphn541g&km0')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['warm-scrubland-19058.herokuapp.com', '127.0.0.1', 'localhost']
 
