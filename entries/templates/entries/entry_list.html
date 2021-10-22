@@ -12,7 +12,7 @@
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
             <h6 class="mb-0">{{ entry.title }}</h6>
-            <p class="mb-0 opacity-75">{{ entry.content }}</p>
+            <p class="mb-0 opacity-75">{{ entry.content|truncatechars:180 }}</p>
           </div>
           <small class="opacity-50 text-nowrap">{{ entry.date_created|date:'Y-m-d H:i' }}</small>
         </div>
