@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import (
@@ -68,6 +69,14 @@ class EntryDeleteView(LockedView, DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super().delete(request, *args, **kwargs)
+
+def user_profile(request, username):
+    user = User.objects.get(username=username)
+    context = {
+       "user": user
+    }
+
+    return render(request, 'entries/user_profile.html', context)
 
 def register_request(request):
 	if request.method == "POST":

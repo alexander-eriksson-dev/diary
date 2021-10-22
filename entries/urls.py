@@ -45,5 +45,9 @@ urlpatterns = [
         views.logout_view, 
         name="logout"
     ),
-    
+    path(
+        "profile/<username>", 
+        views.user_profile, 
+        name="user_profile"
+        ),
 ]
