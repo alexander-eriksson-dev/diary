@@ -11,18 +11,16 @@
   <form method="POST">
     {% csrf_token %}
     {{ form|crispy }}
-    <button class="btn btn-primary" type="submit" value="Save">Submit</button>
-    </form>
-    {% if entry %}
-        <a href="{% url 'entry-detail' entry.id %}">
-            <button class="btn btn-secondary">Cancel</button>
-        </a>
-    {% else %}
-        <a href="{% url 'entry-list' %}">
-            <button class="btn btn-secondary">Cancel</button>
-        </a>
-    {% endif %}
-  </form>
+    <p>
+    <div class="button--container">
+      <button class="btn btn-primary" type="submit" value="Save">Submit</button>
+      {% if entry %}
+      <a class="btn btn-secondary" href="{% url 'entry-detail' entry.id %}">Cancel</a>
+      {% else %}
+      <a class="btn btn-secondary" href="{% url 'entry-list' %}">Cancel</a>
+      {% endif %}
+    </div>
+  </p>
 </div>
 
 {% endblock %}
