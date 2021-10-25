@@ -6,7 +6,7 @@ A simple diary built with Python.
 * Runs on Gunicorn
 * PostgreSQL database
 
-![Demo screenshot](https://i.imgur.com/gLJvu1H.png)
+![Demo screenshot](https://i.imgur.com/FxNfihd.png)
 
 My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn. 😁
 
@@ -21,8 +21,7 @@ Password: github123
 
 ✔️ WORKING ON: 
 * Improved entry form with formatting, image upload etc. 
-* Dark-mode switch and improved styling. 
-* Profile page with password change etc. 
+* More advanced profile page with password change etc.
 
 ## 💨 How to run yourself:
 Clone repo
