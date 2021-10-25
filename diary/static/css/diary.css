@@ -1,6 +1,8 @@
 /* entries/static/css/diary.css */
 
-/* Messages */
+body {
+  background: #171717 !important;
+}
 
 .messages {
   padding: 0;
@@ -9,7 +11,7 @@
 
 .message {
   width: 100%;
-  background: lightblue;
+  background: #2C3E50;
   padding: 1rem;
   text-align: center;
   margin: 1rem 0;
