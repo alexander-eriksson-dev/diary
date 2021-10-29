@@ -8,7 +8,7 @@ A simple diary built with Python.
 
 ![Demo screenshot](https://i.imgur.com/5mjTFIw.png)
 
-My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn. 😁
+My first Github repo, this is for me to practice managing a project, using git, deploying to a server like Heroku and providing instructions for you to run this on your own machine. Updating as I learn.. 😁
 
 ## DEMO:
 This Github repo is automatically deployed on Heroku when pushed to. You can try it out here: 
