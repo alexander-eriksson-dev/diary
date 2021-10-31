@@ -20,7 +20,6 @@ Username: demo
 Password: github123
 
 ✔️ WORKING ON: 
-* Improved entry form with formatting, image upload etc. 
 * More advanced profile page with password change etc.
 
 ## 💨 How to run yourself:
