@@ -44,6 +44,8 @@ CKEDITOR_CONFIGS = {
     'default': {
     'height': 300,
     'width': '100%',
+    'skin': 'bootstrapck',
+    'removePlugins': 'elementspath',
    }, 
 }
 
