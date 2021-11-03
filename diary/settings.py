@@ -43,7 +43,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 CKEDITOR_CONFIGS = {
     'default': {
     'height': 300,
-    'width': 'full',
+    'width': '100%',
    }, 
 }
 
