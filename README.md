@@ -19,9 +19,6 @@ If you dont bother registering:
 Username: demo
 Password: github123
 
-✔️ WORKING ON: 
-* More advanced profile page with password change etc.
-
 ## 💨 How to run yourself:
 Clone repo
 ```
