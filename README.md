@@ -1,5 +1,5 @@
-# diary
-A simple diary built with Python. 
+# journal
+A simple journal built with Python. 
 
 * Django web framework
 * Bootstrap for responsive scaling/design
@@ -14,7 +14,7 @@ My first Github repo, this is for me to practice managing a project, using git, 
 ## DEMO:
 This Github repo is automatically deployed on Heroku when pushed to. You can try it out here: 
 
-[DIARY APP DEMO](https://warm-scrubland-19058.herokuapp.com/)
+[JOURNAL APP DEMO](https://warm-scrubland-19058.herokuapp.com/)
 
 If you dont bother registering: 
 Username: demo
@@ -23,7 +23,7 @@ Password: github123
 ## 💨 How to run yourself:
 Clone repo
 ```
-git clone https://github.com/alexander-eriksson-dev/diary
+git clone https://github.com/alexander-eriksson-dev/journal
 ```
 Create a virtual environment and install requirements
 ```
