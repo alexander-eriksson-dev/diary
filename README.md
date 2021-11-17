@@ -3,6 +3,7 @@ A simple diary built with Python.
 
 * Django web framework
 * Bootstrap for responsive scaling/design
+* Markdown for simple text editing
 * Runs on Gunicorn
 * PostgreSQL database
 
