@@ -1,7 +1,7 @@
 # entries/urls.py
 
 from django.urls import path
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 from . import views
 
@@ -51,7 +51,13 @@ urlpatterns = [
         views.user_profile, 
         name="user_profile"
         ),
-    url(r'^password/$', 
-    views.change_password, 
-    name='change_password'),
+    url(
+        r'^password/$', 
+        views.change_password, 
+        name='change_password'
+        ),
+    url(
+        r'mdeditor/', 
+        include('mdeditor.urls')
+        )
 ]

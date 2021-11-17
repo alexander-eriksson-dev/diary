@@ -39,7 +39,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.django-ckeditor-widget{
-  width: 100%;
-}

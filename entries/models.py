@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.conf import settings
-from ckeditor.fields import RichTextField
+from mdeditor.fields import MDTextField
 
 class Entry(models.Model):
     user = models.ForeignKey(
@@ -10,7 +10,7 @@ class Entry(models.Model):
         default='1',
          )
     title = models.CharField(max_length=200)
-    content = RichTextField()
+    content = MDTextField()
     date_created = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

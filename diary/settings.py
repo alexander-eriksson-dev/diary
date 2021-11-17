@@ -35,18 +35,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'ckeditor',
+    'mdeditor',
+    'markdownify.apps.MarkdownifyConfig',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-CKEDITOR_CONFIGS = {
+MDEDITOR_CONFIGS = {
     'default': {
-    'height': 300,
-    'width': '100%',
-    'skin': 'moono',
-    'removePlugins': 'elementspath',
-   }, 
+        'width': '100% ', 
+        'toolbar': ["undo", "redo", "|",
+                    "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
+                    "h1", "h2", "h3", "h5", "h6", "|",
+                    "list-ul", "list-ol", "hr", "|",
+                    "link", "code", "preformatted-text", "code-block", "table", "datetime",
+                    "emoji", "pagebreak", "|",
+                    "||", "preview", "watch", "fullscreen"],  
+        'language': 'en' 
+    } 
 }
 
 LOGOUT_REDIRECT_URL = '/'
