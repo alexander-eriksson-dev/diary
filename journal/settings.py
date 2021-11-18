@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'mdeditor',
     'markdownify.apps.MarkdownifyConfig',
-    'django_rename_app',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
