@@ -5,17 +5,17 @@
 {% block content %}
 
 <div class="container">
-    <div class="col-lg-12">
-      <div id="markdown-content">
-        <h1>{{ entry.title }}</h1>
-        <textarea>{{ entry.content }}</textarea>
-      </div>
-      <small class="text-muted ms-4">{{ entry.date_created|date:'l M dS G:i' }}</small>
-      <div class="d-grid gap-1 d-sm-flex mb-5 mt-2 ms-4">
-        <a class="btn btn-outline-primary btn-sm px-2 me-sm-2" href="{% url 'entry-update' entry.id %}">Edit</a>
-        <a class="btn btn-outline-danger btn-sm px-2" href="{% url 'entry-delete' entry.id %}">Delete</a>
-      </div>
+  <div class="col-lg-12">
+    <div id="markdown-content">
+      <h1>{{ entry.title }}</h1>
+      <textarea>{{ entry.content }}</textarea>
+    </div>
+    <small class="text-muted ms-4">{{ entry.date_created|date:'l M dS G:i' }}</small>
+    <div class="d-grid gap-1 d-sm-flex mb-5 mt-2 ms-4">
+      <a class="btn btn-outline-primary btn-sm px-2 me-sm-2" href="{% url 'entry-update' entry.id %}">Edit</a>
+      <a class="btn btn-outline-danger btn-sm px-2" href="{% url 'entry-delete' entry.id %}">Delete</a>
     </div>
   </div>
-  
+</div>
+
 {% endblock %}
