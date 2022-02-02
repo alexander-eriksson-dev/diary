@@ -20,6 +20,9 @@ If you dont bother registering:
 Username: demo
 Password: github123
 
+## Credit:
+Based on [this tutorial from RealPython](https://realpython.com/django-diary-project-python/)
+
 ## 💨 How to run yourself:
 Clone repo
 ```
@@ -45,6 +48,3 @@ Run local server:
 python manage.py runserver
 ```
 👏🏼👏🏼
-
-## Credit:
-Started out from [this project from RealPython](https://realpython.com/django-diary-project-python/)
